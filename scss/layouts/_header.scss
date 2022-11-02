@@ -1,0 +1,15 @@
+.header {
+    background: white;
+    z-index: 2;
+    height: 6rem;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+  }
+  
+  .logo-header {
+    text-align: center;
+  }
