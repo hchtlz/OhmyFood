@@ -1,0 +1,28 @@
+.footer {
+    width: 100%;
+    background: #353535;
+    color: white;
+    padding: 3rem;
+
+    &-title {
+        font-family: 'Shrikhand', cursive;
+        margin: 1rem 0rem;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    &-nav-link {
+        margin: 0.5rem 0rem;
+        align-items: center;
+        display: flex;
+        gap: 0.5rem;
+    }
+    &-nav-icon {
+        color: white;
+    }
+    &-nav-text {
+        color: white;
+        text-decoration: none;
+    }
+}
