@@ -1,4 +1,4 @@
-.sub-header {
+.sub_header {
     background-color: #eaeaea;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -7,7 +7,7 @@
   .fa-sharp.fa-solid.fa-location-dot{
     margin-right: 15px;
   }
-  .explore-section{
+  .explore_section{
     padding: 5rem 2rem;
     background-color: $background-color;
     display: flex;
@@ -17,12 +17,12 @@
   .fonctionnement{
     padding: 5rem 2rem;
     
-    &-list-grid{
+    &_list_grid{
         margin-top: 15px;
         display: grid;
         row-gap: 2rem;
       }  
-      &-card {
+      &_card {
         background: #f6f6f6;
         padding: 1rem;
         box-shadow: rgb(50 50 93 / 0%) 0px 5px 20px 0px, rgb(0 0 0 / 30%) -1px 5px 30px -10px;
@@ -33,7 +33,7 @@
         align-items: center;
         gap: 2rem;
       }
-      &-card &-number {
+      &_card &_number {
         background: #9356dc;
         color: white;
         width: 2rem;
@@ -45,7 +45,7 @@
         align-items: center;
         justify-content: center;
       }
-      &-icon {
+      &_icon {
         font-size: 24px;
         margin-left: 25px;
         line-height: 1;
@@ -54,10 +54,10 @@
         display: inline-block;
         color: #7e7e7e;
       }
-      &-card.colorized {
+      &_card.colorized {
         background-color: #f5edff;
       }
-      &-icon.active {
+      &_icon.active {
         color: #9356dc;
       }
 }
@@ -65,12 +65,12 @@
     background-color: $background-color;
     padding: 5rem 2rem;
     
-    &-list-grid {
+    &_list_grid {
         margin-top: 15px;
         display: grid;
         row-gap: 2rem;
     }
-    &-card {
+    &_card {
         width: 100%;
         min-width: 2.3rem;
         border-radius: 2rem;
@@ -80,13 +80,13 @@
         position: relative;
         transition: filter 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     }
-    &-image {
+    &_image {
         object-fit: cover;
         width: 100%;
         border-radius: 2rem 2rem 0 0;
         height: 13rem;
     }
-    &-tag {
+    &_tag {
         position: absolute;
         top: 2rem;
         right: 2rem;
@@ -95,27 +95,27 @@
         color: #139273;
         border-radius: 2px;
     }
-    &-info {
+    &_info {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
       }
-    &-text {
+    &_text {
         padding-left: 15px;
     }
-    &-name {
+    &_name {
         color: #000;
         margin-bottom: 0.5rem;
         font-size: 1.3rem;
     }
-    &-localisation {
+    &_localisation {
         color: #000;
         font-size: 18px;
         font-weight: 300;
         margin-top: 0;
     }
-    &-favorite-icon {
+    &_favorite-icon {
         font-size: 24px;
         padding-right: 15px;
     }

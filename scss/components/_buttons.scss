@@ -1,4 +1,4 @@
-.btn.btn-primary{
+.btn.btn_primary{
     color: white;
     padding: 1rem 2rem;
     text-align: center;
@@ -13,7 +13,7 @@
     transition: 0.2s ease-in-out;
     text-decoration: none;
   }
-  .btn.btn-primary:hover{
+  .btn.btn_primary:hover{
     filter: brightness(1.1);
     box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px, rgb(0 0 0 / 30%) 0px 18px 36px -18px;
   }
