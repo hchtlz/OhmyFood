@@ -30,6 +30,7 @@ p {
 
 a {
   background-color: transparent;
+  text-decoration: none;
 }
 
 .btn.btn_primary {
@@ -65,8 +66,16 @@ a {
   top: 0;
 }
 
-.logo-header {
-  text-align: center;
+.header_arrow {
+  margin-left: 2rem;
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  top: 30px;
+  left: 15px;
+  font-size: 26px;
+  color: #000;
 }
 
 .footer {
@@ -311,7 +320,7 @@ a {
 .restaurants_price {
   font-weight: 600;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -10,6 +10,15 @@
     top: 0;
   }
   
-  .logo-header {
-    text-align: center;
+.header_arrow {
+    margin-left: 2rem;
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    top: 30px;
+    left: 15px;
+    font-size: 26px;
+    color: #000;
   }
+
