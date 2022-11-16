@@ -1,6 +1,8 @@
 html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
+    box-sizing: border-box; /* natural box layout model to all elements */
+
   }
   
   body {
@@ -10,23 +12,4 @@ html {
   
   main {
     display: block;
-  }
-  
-  h1 {
-    font-size: 2em;
-    margin: 0;
-  }
-  
-  h2 {
-    font-size: 1.5em;
-    margin: 0;
-  }
-  
-  p {
-    font-weight: 200;
-  }
-  
-  a {
-    background-color: transparent;
-    text-decoration: none;
   }

@@ -37,6 +37,7 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    animation: slideUp 1s;
   }
   &_menu_title_category {
     font-size: 22px;
@@ -89,5 +90,18 @@
     font-weight: 600;
     display: flex;
     align-items: flex-end;
+  }
+}
+.main_button {
+  background: $background-color;
+  padding: 20px 0 20px 0;
+  align-items: center;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .restaurants_menu_all_list
+   {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    column-gap: 4rem;
   }
 }

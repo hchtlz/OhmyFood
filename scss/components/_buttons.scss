@@ -2,7 +2,6 @@
     color: white;
     padding: 1rem 2rem;
     text-align: center;
-    background: #ff79da;
     background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
     width: min-content;
     white-space: nowrap;
@@ -12,6 +11,7 @@
     cursor: pointer;
     transition: 0.2s ease-in-out;
     text-decoration: none;
+    display: flex;
   }
   .btn.btn_primary:hover{
     filter: brightness(1.1);
