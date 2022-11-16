@@ -1,134 +1,189 @@
-.sub_header {
-    background-color: #eaeaea;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-  .fa-sharp.fa-solid.fa-location-dot{
-    margin-right: 15px;
-  }
-  .explore_section{
-    padding: 5rem 2rem;
-    background-color: $background-color;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .fonctionnement{
-    padding: 5rem 2rem;
-    
-    &_list_grid{
-        margin-top: 15px;
-        display: grid;
-        row-gap: 2rem;
-      }  
-      &_card {
-        background: #f6f6f6;
-        padding: 1rem;
-        box-shadow: rgb(50 50 93 / 0%) 0px 5px 20px 0px, rgb(0 0 0 / 30%) -1px 5px 30px -10px;
-        border-radius: 2rem;
-        margin-left: 1.5rem;
-        position: relative;
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-      }
-      &_card &_number {
-        background: #9356dc;
-        color: white;
-        width: 2rem;
-        height: 2rem;
-        border-radius: 50%;
-        position: absolute;
-        left: -1rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      &_icon {
-        font-size: 24px;
-        margin-left: 25px;
-        line-height: 1;
-        letter-spacing: normal;
-        text-transform: none;
-        display: inline-block;
-        color: #7e7e7e;
-      }
-      &_card.colorized {
-        background-color: #f5edff;
-      }
-      &_icon.active {
-        color: #9356dc;
-      }
-}
-.restaurants {
-    background-color: $background-color;
-    padding: 5rem 2rem;
-    
-    &_list_grid {
-        margin-top: 15px;
-        display: grid;
-        row-gap: 2rem;
-    }
-    &_card {
-        width: 100%;
-        min-width: 2.3rem;
-        border-radius: 2rem;
-        @include card-shadow;
-        text-decoration: none;
-        cursor: pointer;
-        position: relative;
-        transition: filter 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    }
-    &_image {
-        object-fit: cover;
-        width: 100%;
-        border-radius: 2rem 2rem 0 0;
-        height: 13rem;
-    }
-    &_tag {
-        position: absolute;
-        top: 2rem;
-        right: 2rem;
-        background-color: #99E2D0;
-        padding: 0.5rem;
-        color: #139273;
-        border-radius: 2px;
-    }
-    &_info {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-      }
-    &_text {
-        padding-left: 15px;
-    }
-    &_name {
-        color: #000;
-        margin-bottom: 0.5rem;
-        font-size: 1.3rem;
-    }
-    &_localisation {
-        color: #000;
-        font-size: 18px;
-        font-weight: 300;
-        margin-top: 0;
-    }
-    &_favorite-icon {
-        font-size: 24px;
-        padding-right: 15px;
-    }
+.loaderout
+{
+	background-color: $background-color;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: fadeout 0.2s linear;
+	animation-delay: 1.5s;
+	animation-fill-mode: both;
+	height: 100vh;
 }
 
-@media (min-width: $breakpoint-tablet) {
-  .fonctionnement_list_grid,
-  .restaurants_list_grid
-   {
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    column-gap: 2rem;
-  }
+.loader
+{
+	border: 10px solid $background-color;
+	border-radius: 50%;
+	border-top: 10px solid #9356DC;
+	width: 120px;
+	height: 120px;
+	animation: rotate 1s linear infinite;
+	position: absolute;
 }
 
+.sub__header
+{
+	background-color: #eaeaea;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+}
 
+.fa-sharp.fa-solid.fa-location-dot
+{
+	margin-right: 15px;
+}
 
+.explore__section
+{
+	padding: 5rem 2rem;
+	background-color: $background-color;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.fonctionnement
+{
+	padding: 5rem 2rem;
+	&__list-grid
+	{
+		margin-top: 15px;
+		display: grid;
+		row-gap: 2rem;
+	}
+
+	&__card
+	{
+		background: #f6f6f6;
+		padding: 1rem;
+		box-shadow: rgb(50 50 93 / 0%) 0px 5px 20px 0px, rgb(0 0 0 / 30%) -1px 5px 30px -10px;
+		border-radius: 2rem;
+		margin-left: 1.5rem;
+		position: relative;
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	&__card &__number
+	{
+		background: #9356dc;
+		color: white;
+		width: 2rem;
+		height: 2rem;
+		border-radius: 50%;
+		position: absolute;
+		left: -1rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__icon
+	{
+		font-size: 24px;
+		margin-left: 25px;
+		line-height: 1;
+		letter-spacing: normal;
+		text-transform: none;
+		display: inline-block;
+		color: #7e7e7e;
+	}
+
+	&__card.colorized
+	{
+		background-color: #f5edff;
+	}
+
+	&__icon.active
+	{
+		color: #9356dc;
+	}
+}
+
+.restaurants
+{
+	background-color: $background-color;
+	padding: 5rem 2rem;
+	&__list-grid
+	{
+		margin-top: 15px;
+		display: grid;
+		row-gap: 2rem;
+	}
+
+	&__card
+	{
+		width: 100%;
+		min-width: 2.3rem;
+		border-radius: 2rem;
+		@include card-shadow;
+		text-decoration: none;
+		cursor: pointer;
+		position: relative;
+		transition: filter 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+	}
+
+	&__image
+	{
+		object-fit: cover;
+		width: 100%;
+		border-radius: 2rem 2rem 0 0;
+		height: 13rem;
+	}
+
+	&__tag
+	{
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+		background-color: #99E2D0;
+		padding: 0.5rem;
+		color: #139273;
+		border-radius: 2px;
+	}
+
+	&__info
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__text
+	{
+		padding-left: 15px;
+	}
+
+	&__name
+	{
+		color: #000;
+		margin-bottom: 0.5rem;
+		font-size: 1.3rem;
+	}
+
+	&__localisation
+	{
+		color: #000;
+		font-size: 18px;
+		font-weight: 300;
+		margin-top: 0;
+	}
+
+	&__favorite-icon
+	{
+		font-size: 24px;
+		padding-right: 15px;
+	}
+}
+
+@media (min-width: $breakpoint-tablet)
+{
+	.fonctionnement__list-grid,  .restaurants__list-grid
+	{
+		grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+		column-gap: 2rem;
+	}
+}

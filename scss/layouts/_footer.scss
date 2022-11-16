@@ -1,27 +1,37 @@
-.footer {
-    background: #353535;
-    color: white;
-    padding: 3rem 0 3rem 3rem;
+.footer
+{
+	background: #353535;
+	color: white;
+	padding: 3rem 0 3rem 3rem;
+	&__title
+	{
+		font-family: 'Shrikhand', cursive;
+		margin: 1rem 0rem;
+	}
 
-    &_title {
-        font-family: 'Shrikhand', cursive;
-        margin: 1rem 0rem;
-    }
-    nav {
-        display: flex;
-        flex-direction: column;
-    }
-    &_nav_link {
-        margin: 0.5rem 0rem;
-        align-items: center;
-        display: flex;
-        gap: 0.5rem;
-    }
-    &_nav_icon {
-        color: white;
-    }
-    &_nav_text {
-        color: white;
-        text-decoration: none;
-    }
+	nav
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__nav-link
+	{
+		margin: 0.5rem 0rem;
+		align-items: center;
+		display: flex;
+		gap: 0.5rem;
+	}
+
+	&__nav-icon
+	{
+		color: white;
+		width: 20px;
+	}
+
+	&__nav-text
+	{
+		color: white;
+		text-decoration: none;
+	}
 }

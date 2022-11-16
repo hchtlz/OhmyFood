@@ -1,0 +1,175 @@
+.cover_image
+{
+	object-fit: cover;
+	width: 100%;
+	max-height: 30rem;
+}
+
+.restaurants
+{
+	&__menu-wrapper
+	{
+		border-radius: 4rem 4rem 0 0;
+		background: $background-color;
+		padding: 2rem;
+		position: relative;
+		margin-top: -4rem;
+	}
+
+	&__menu-header
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 2rem;
+		margin-bottom: 3rem;
+	}
+
+	&__menu-title
+	{
+		font-family: 'Shrikhand', cursive;
+		font-size: 2rem;
+	}
+
+	&__menu-favorite-icons
+	{
+		font-size: 24px;
+		margin-right: 15px;
+	}
+
+	&__menu-all-list
+	{
+		display: grid;
+		gap: 4rem;
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	&__menu-list
+	{
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		animation: slideUp 1s;
+	}
+
+	&__menu-title-category
+	{
+		font-size: 22px;
+		margin-bottom: 1rem;
+		font-weight: 400;
+		position: relative;
+	}
+
+	&__menu-title-category::after
+	{
+		content: "";
+		width: 5rem;
+		height: 0.5rem;
+		background-color: #99e2d0;
+		position: absolute;
+		bottom: -1.5rem;
+		left: 0;
+	}
+
+	&__menu-card
+	{
+		background: white;
+		height: 7rem;
+		border-radius: 15px;
+		@include card-shadow;
+		display: flex;
+	}
+
+	&__info
+	{
+		padding: 1.5rem;
+		max-width: 100%;
+		overflow: hidden;
+		flex: 1;
+		display: flex;
+		justify-content: space-between;
+		gap: 1rem;
+	}
+
+	&__text
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	&__title
+	{
+		font-size: 1.2rem;
+		font-weight: 400;
+		margin-bottom: 0;
+	}
+
+	&__menu-text
+	{
+		font-weight: 200;
+		margin-top: 0.5rem;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	&__price
+	{
+		font-weight: 600;
+		margin-top: auto;
+		margin-bottom: 0;
+	}
+
+	&__selection-animation
+	{
+		background: #99e2d0;
+		cursor: pointer;
+		height: auto;
+		width: 0;
+		opacity: 0;
+		border-radius: 0 15px 15px 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+	}
+
+	&__check-icon
+	{
+		font-size: 3rem;
+		color: white;
+		transform: rotate(360deg);
+		transition: 0.4s ease-in-out;
+	}
+}
+
+.restaurants__menu-card:hover .restaurants__selection-animation
+{
+	opacity: 100%;
+	width: 7rem;
+}
+
+.restaurants__menu-card:hover .restaurants__check-icon
+{
+	transform: rotate(0deg);
+}
+
+.main_button
+{
+	background: $background-color;
+	padding: 20px 0 20px 0;
+	align-items: center;
+}
+
+@media (min-width: $breakpoint-tablet)
+{
+	.restaurants__menu-all-list
+	{
+		grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+		column-gap: 4rem;
+	}
+}

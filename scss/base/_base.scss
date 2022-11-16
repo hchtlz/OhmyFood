@@ -1,15 +1,22 @@
-html {
-    line-height: 1.15; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 */
-    box-sizing: border-box; /* natural box layout model to all elements */
+html
+{
+	line-height: 1.15;
+	/* 1 */
+	-webkit-text-size-adjust: 100%;
+	/* 2 */
+	box-sizing: border-box;
+	/* natural box layout model to all elements */
+}
 
-  }
-  
-  body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  main {
-    display: block;
-  }
+body
+{
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	animation: fadein 0.8s linear;
+	position: relative;
+}
+
+main
+{
+	display: block;
+}
