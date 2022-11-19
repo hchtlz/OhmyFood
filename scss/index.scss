@@ -1,13 +1,14 @@
 @import "./base/typography";
 @import "./base/base";
 
+@import "./utils/variables";
+@import "./utils/animations";
+
 @import "./components/buttons";
+@import "./components/icons";
 
 @import "./layouts/header";
 @import "./layouts/footer";
-
-@import "./utils/variables";
-@import "./utils/animations";
 
 @import "./pages/home";
 @import "./pages/restaurants";

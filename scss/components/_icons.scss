@@ -1,0 +1,15 @@
+.fa-heart
+{
+	color: black;
+	&::before
+	{
+		transition: color 0.1s ease-in-out;
+	}
+
+	&:hover::before
+	{
+		color: #ff79da;
+		font-weight: bold;
+		cursor: pointer;
+	}
+}

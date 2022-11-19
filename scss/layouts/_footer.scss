@@ -1,7 +1,7 @@
 .footer
 {
-	background: #353535;
-	color: white;
+	background: $background-color-dark;
+	color: $text-color-light;
 	padding: 3rem 0 3rem 3rem;
 	&__title
 	{
@@ -25,13 +25,13 @@
 
 	&__nav-icon
 	{
-		color: white;
+		color: $text-color-light;
 		width: 20px;
 	}
 
 	&__nav-text
 	{
-		color: white;
+		color: $text-color-light;
 		text-decoration: none;
 	}
 }

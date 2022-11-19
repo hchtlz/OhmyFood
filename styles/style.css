@@ -35,84 +35,10 @@ html {
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  animation: fadein 0.8s linear;
-  position: relative;
 }
 
 main {
   display: block;
-}
-
-.btn.btn_primary {
-  color: white;
-  padding: 1rem 2rem;
-  text-align: center;
-  background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
-  width: min-content;
-  white-space: nowrap;
-  margin: 2rem auto;
-  border-radius: 30px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-  text-decoration: none;
-  display: flex;
-}
-
-.btn.btn_primary:hover {
-  filter: brightness(1.1);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-}
-
-.header {
-  background: white;
-  z-index: 2;
-  height: 6rem;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  position: sticky;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 0;
-}
-.header__arrow {
-  margin-left: 2rem;
-  position: absolute;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  top: 30px;
-  left: 15px;
-  font-size: 26px;
-  color: #000;
-}
-
-.footer {
-  background: #353535;
-  color: white;
-  padding: 3rem 0 3rem 3rem;
-}
-.footer__title {
-  font-family: "Shrikhand", cursive;
-  margin: 1rem 0rem;
-}
-.footer nav {
-  display: flex;
-  flex-direction: column;
-}
-.footer__nav-link {
-  margin: 0.5rem 0rem;
-  align-items: center;
-  display: flex;
-  gap: 0.5rem;
-}
-.footer__nav-icon {
-  color: white;
-  width: 20px;
-}
-.footer__nav-text {
-  color: white;
-  text-decoration: none;
 }
 
 @keyframes slideUp {
@@ -142,6 +68,27 @@ main {
     transform: rotate(360deg);
   }
 }
+.btn.btn_primary {
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+  background: linear-gradient(162deg, #FF79DA 0%, #9356DC 100%);
+  width: min-content;
+  white-space: nowrap;
+  margin: 2rem auto;
+  border-radius: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  display: flex;
+}
+
+.btn.btn_primary:hover {
+  filter: brightness(1.1);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
 .fa-heart {
   color: black;
 }
@@ -152,6 +99,57 @@ main {
   color: #ff79da;
   font-weight: bold;
   cursor: pointer;
+}
+
+.header {
+  background: white;
+  z-index: 2;
+  height: 6rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+}
+.header__arrow {
+  margin-left: 2rem;
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  top: 30px;
+  left: 15px;
+  font-size: 26px;
+  color: #000;
+}
+
+.footer {
+  background: #353535;
+  color: #fff;
+  padding: 3rem 0 3rem 3rem;
+}
+.footer__title {
+  font-family: "Shrikhand", cursive;
+  margin: 1rem 0rem;
+}
+.footer nav {
+  display: flex;
+  flex-direction: column;
+}
+.footer__nav-link {
+  margin: 0.5rem 0rem;
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
+.footer__nav-icon {
+  color: #fff;
+  width: 20px;
+}
+.footer__nav-text {
+  color: #fff;
+  text-decoration: none;
 }
 
 .loaderout {
@@ -203,7 +201,7 @@ main {
   row-gap: 2rem;
 }
 .fonctionnement__card {
-  background: #f6f6f6;
+  background: whitesmoke;
   padding: 1rem;
   box-shadow: rgba(50, 50, 93, 0) 0px 5px 20px 0px, rgba(0, 0, 0, 0.3) -1px 5px 30px -10px;
   border-radius: 2rem;
@@ -214,8 +212,8 @@ main {
   gap: 1rem;
 }
 .fonctionnement__card .fonctionnement__number {
-  background: #9356dc;
-  color: white;
+  background: #9356DC;
+  color: #fff;
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
@@ -238,7 +236,7 @@ main {
   background-color: #f5edff;
 }
 .fonctionnement__icon.active {
-  color: #9356dc;
+  color: #9356DC;
 }
 
 .restaurants {
@@ -356,13 +354,13 @@ main {
   content: "";
   width: 5rem;
   height: 0.5rem;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   position: absolute;
   bottom: -1.5rem;
   left: 0;
 }
 .restaurants__menu-card {
-  background: white;
+  background: #fff;
   height: 7rem;
   border-radius: 15px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -402,7 +400,7 @@ main {
   margin-bottom: 0;
 }
 .restaurants__selection-animation {
-  background: #99e2d0;
+  background: #99E2D0;
   cursor: pointer;
   height: auto;
   width: 0;
@@ -415,7 +413,7 @@ main {
 }
 .restaurants__check-icon {
   font-size: 3rem;
-  color: white;
+  color: #fff;
   transform: rotate(360deg);
   transition: 0.4s ease-in-out;
 }

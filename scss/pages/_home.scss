@@ -1,6 +1,6 @@
 .loaderout
 {
-	background-color: $background-color;
+	background-color: $background-color-light;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -12,9 +12,9 @@
 
 .loader
 {
-	border: 10px solid $background-color;
+	border: 10px solid $background-color-light;
 	border-radius: 50%;
-	border-top: 10px solid #9356DC;
+	border-top: 10px solid $primary-color;
 	width: 120px;
 	height: 120px;
 	animation: rotate 1s linear infinite;
@@ -37,7 +37,7 @@
 .explore__section
 {
 	padding: 5rem 2rem;
-	background-color: $background-color;
+	background-color: $background-color-light;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -55,7 +55,7 @@
 
 	&__card
 	{
-		background: #f6f6f6;
+		background: $background-color-light;
 		padding: 1rem;
 		box-shadow: rgb(50 50 93 / 0%) 0px 5px 20px 0px, rgb(0 0 0 / 30%) -1px 5px 30px -10px;
 		border-radius: 2rem;
@@ -68,8 +68,8 @@
 
 	&__card &__number
 	{
-		background: #9356dc;
-		color: white;
+		background: $primary-color;
+		color: $text-color-light;
 		width: 2rem;
 		height: 2rem;
 		border-radius: 50%;
@@ -93,18 +93,18 @@
 
 	&__card.colorized
 	{
-		background-color: #f5edff;
+		background-color: $primary-color-light;
 	}
 
 	&__icon.active
 	{
-		color: #9356dc;
+		color: $primary-color;
 	}
 }
 
 .restaurants
 {
-	background-color: $background-color;
+	background-color: $background-color-light;
 	padding: 5rem 2rem;
 	&__list-grid
 	{
@@ -138,9 +138,9 @@
 		position: absolute;
 		top: 2rem;
 		right: 2rem;
-		background-color: #99E2D0;
+		background-color: $tertiary-color;
 		padding: 0.5rem;
-		color: #139273;
+		color: $tertiary-color-light;
 		border-radius: 2px;
 	}
 
@@ -159,14 +159,14 @@
 
 	&__name
 	{
-		color: #000;
+		color: $text-color-dark;
 		margin-bottom: 0.5rem;
 		font-size: 1.3rem;
 	}
 
 	&__localisation
 	{
-		color: #000;
+		color: $text-color-dark;
 		font-size: 18px;
 		font-weight: 300;
 		margin-top: 0;

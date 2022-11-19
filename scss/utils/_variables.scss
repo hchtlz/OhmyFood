@@ -1,11 +1,21 @@
+$background-color: #fff;
+$background-color-light: whitesmoke;
+$background-color-dark: #353535;
+
+$text-color-light: #fff;
+$text-color-dark: #000;
+
+$primary-color: #9356DC;
+$primary-color-light: #f5edff;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$tertiary-color-light: #139273;
+
 $breakpoint-tablet: 768px;
 $breakpoint-mobile: 600px;
-
-$background-color: whitesmoke;
-$text-color: #fff;
 
 @mixin card-shadow
 {
 	box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
-}
+};
     

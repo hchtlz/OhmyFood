@@ -1,14 +1,14 @@
 .btn.btn_primary
 {
-	color: white;
+	color: $text-color-light;
 	padding: 1rem 2rem;
 	text-align: center;
-	background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+	background: linear-gradient(162deg, $secondary-color 0%, $primary-color 100%);
 	width: min-content;
 	white-space: nowrap;
 	margin: 2rem auto;
 	border-radius: 30px;
-	box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+	@include card-shadow;
 	cursor: pointer;
 	transition: 0.2s ease-in-out;
 	text-decoration: none;
