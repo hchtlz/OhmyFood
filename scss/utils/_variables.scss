@@ -14,8 +14,7 @@ $tertiary-color-light: #139273;
 $breakpoint-tablet: 768px;
 $breakpoint-mobile: 600px;
 
-@mixin card-shadow
-{
+@mixin card-shadow {
 	box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
 };
     

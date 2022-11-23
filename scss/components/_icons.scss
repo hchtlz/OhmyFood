@@ -1,13 +1,14 @@
-.fa-heart
-{
-	color: black;
-	&::before
-	{
+.fa-regular {
+	font-size: 20px;
+}
+
+.fa-heart {
+	&::before {
+		color: black;
 		transition: color 0.1s ease-in-out;
 	}
 
-	&:hover::before
-	{
+	&:hover::before {
 		color: #ff79da;
 		font-weight: bold;
 		cursor: pointer;

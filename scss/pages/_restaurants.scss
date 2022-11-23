@@ -1,14 +1,11 @@
-.cover_image
-{
+.cover_image {
 	object-fit: cover;
 	width: 100%;
 	max-height: 30rem;
 }
 
-.restaurants
-{
-	&__menu-wrapper
-	{
+.restaurants {
+	&__menu-wrapper {
 		border-radius: 4rem 4rem 0 0;
 		background: $background-color-light;
 		padding: 2rem;
@@ -16,8 +13,7 @@
 		margin-top: -4rem;
 	}
 
-	&__menu-header
-	{
+	&__menu-header {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -26,43 +22,37 @@
 		margin-bottom: 3rem;
 	}
 
-	&__menu-title
-	{
+	&__menu-title {
 		font-family: 'Shrikhand', cursive;
 		font-size: 2rem;
 	}
 
-	&__menu-favorite-icons
-	{
+	&__menu-favorite-icons {
 		font-size: 24px;
 		margin-right: 15px;
 	}
 
-	&__menu-all-list
-	{
+	&__menu-all-list {
 		display: grid;
 		gap: 4rem;
 		grid-template-columns: minmax(0, 1fr);
 	}
 
-	&__menu-list
-	{
+	&__menu-list {
 		display: flex;
 		flex-direction: column;
 		gap: 2rem;
 		animation: slideUp 1s;
 	}
 
-	&__menu-title-category
-	{
+	&__menu-title-category {
 		font-size: 22px;
 		margin-bottom: 1rem;
 		font-weight: 400;
 		position: relative;
 	}
 
-	&__menu-title-category::after
-	{
+	&__menu-title-category::after {
 		content: "";
 		width: 5rem;
 		height: 0.5rem;
@@ -72,8 +62,7 @@
 		left: 0;
 	}
 
-	&__menu-card
-	{
+	&__menu-card {
 		background: $background-color;
 		height: 7rem;
 		border-radius: 15px;
@@ -81,8 +70,7 @@
 		display: flex;
 	}
 
-	&__info
-	{
+	&__info {
 		padding: 1.5rem;
 		max-width: 100%;
 		overflow: hidden;
@@ -92,8 +80,7 @@
 		gap: 1rem;
 	}
 
-	&__text
-	{
+	&__text {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -101,15 +88,13 @@
 		white-space: nowrap;
 	}
 
-	&__title
-	{
+	&__title {
 		font-size: 1.2rem;
 		font-weight: 400;
 		margin-bottom: 0;
 	}
 
-	&__menu-text
-	{
+	&__menu-text {
 		font-weight: 200;
 		margin-top: 0.5rem;
 		white-space: nowrap;
@@ -117,15 +102,13 @@
 		text-overflow: ellipsis;
 	}
 
-	&__price
-	{
+	&__price {
 		font-weight: 600;
 		margin-top: auto;
 		margin-bottom: 0;
 	}
 
-	&__selection-animation
-	{
+	&__selection-animation {
 		background: $tertiary-color;
 		cursor: pointer;
 		height: auto;
@@ -135,11 +118,10 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+		transition: width 0.4s ease-in-out, opacity 0.4s ease-in-out;
 	}
 
-	&__check-icon
-	{
+	&__check-icon {
 		font-size: 3rem;
 		color: $text-color-light;
 		transform: rotate(360deg);
@@ -147,28 +129,23 @@
 	}
 }
 
-.restaurants__menu-card:hover .restaurants__selection-animation
-{
+.restaurants__menu-card:hover .restaurants__selection-animation {
 	opacity: 100%;
 	width: 7rem;
 }
 
-.restaurants__menu-card:hover .restaurants__check-icon
-{
+.restaurants__menu-card:hover .restaurants__check-icon {
 	transform: rotate(0deg);
 }
 
-.main_button
-{
+.main_button {
 	background: $background-color-light;
 	padding: 20px 0 20px 0;
 	align-items: center;
 }
 
-@media (min-width: $breakpoint-tablet)
-{
-	.restaurants__menu-all-list
-	{
+@media (min-width: $breakpoint-tablet) {
+	.restaurants__menu-all-list {
 		grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 		column-gap: 4rem;
 	}

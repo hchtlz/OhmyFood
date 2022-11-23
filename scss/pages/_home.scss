@@ -1,5 +1,4 @@
-.loaderout
-{
+.loaderout {
 	background-color: $background-color-light;
 	display: flex;
 	justify-content: center;
@@ -10,8 +9,7 @@
 	height: 100vh;
 }
 
-.loader
-{
+.loader {
 	border: 10px solid $background-color-light;
 	border-radius: 50%;
 	border-top: 10px solid $primary-color;
@@ -21,40 +19,36 @@
 	position: absolute;
 }
 
-.sub__header
-{
+.sub__header {
 	background-color: #eaeaea;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	text-align: center;
 }
 
-.fa-sharp.fa-solid.fa-location-dot
-{
+.fa-sharp.fa-solid.fa-location-dot {
 	margin-right: 15px;
 }
 
-.explore__section
-{
+.explore__section {
 	padding: 5rem 2rem;
 	background-color: $background-color-light;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	text-align: center;
 }
 
-.fonctionnement
-{
+.fonctionnement {
 	padding: 5rem 2rem;
-	&__list-grid
-	{
+
+	&__list-grid {
 		margin-top: 15px;
 		display: grid;
 		row-gap: 2rem;
 	}
 
-	&__card
-	{
+	&__card {
 		background: $background-color-light;
 		padding: 1rem;
 		box-shadow: rgb(50 50 93 / 0%) 0px 5px 20px 0px, rgb(0 0 0 / 30%) -1px 5px 30px -10px;
@@ -66,8 +60,7 @@
 		gap: 1rem;
 	}
 
-	&__card &__number
-	{
+	&__card &__number {
 		background: $primary-color;
 		color: $text-color-light;
 		width: 2rem;
@@ -80,8 +73,7 @@
 		justify-content: center;
 	}
 
-	&__icon
-	{
+	&__icon {
 		font-size: 24px;
 		margin-left: 25px;
 		line-height: 1;
@@ -91,30 +83,26 @@
 		color: #7e7e7e;
 	}
 
-	&__card.colorized
-	{
+	&__card.colorized {
 		background-color: $primary-color-light;
 	}
 
-	&__icon.active
-	{
+	&__icon.active {
 		color: $primary-color;
 	}
 }
 
-.restaurants
-{
+.restaurants {
 	background-color: $background-color-light;
 	padding: 5rem 2rem;
-	&__list-grid
-	{
+	
+	&__list-grid {
 		margin-top: 15px;
 		display: grid;
 		row-gap: 2rem;
 	}
 
-	&__card
-	{
+	&__card {
 		width: 100%;
 		min-width: 2.3rem;
 		border-radius: 2rem;
@@ -125,16 +113,14 @@
 		transition: filter 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 	}
 
-	&__image
-	{
+	&__image {
 		object-fit: cover;
 		width: 100%;
 		border-radius: 2rem 2rem 0 0;
 		height: 13rem;
 	}
 
-	&__tag
-	{
+	&__tag {
 		position: absolute;
 		top: 2rem;
 		right: 2rem;
@@ -144,45 +130,39 @@
 		border-radius: 2px;
 	}
 
-	&__info
-	{
+	&__info {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
 	}
 
-	&__text
-	{
+	&__text {
 		padding-left: 15px;
 	}
 
-	&__name
-	{
+	&__name {
 		color: $text-color-dark;
 		margin-bottom: 0.5rem;
 		font-size: 1.3rem;
 	}
 
-	&__localisation
-	{
+	&__localisation {
 		color: $text-color-dark;
 		font-size: 18px;
 		font-weight: 300;
 		margin-top: 0;
 	}
 
-	&__favorite-icon
-	{
+	&__favorite-icon {
 		font-size: 24px;
 		padding-right: 15px;
 	}
 }
 
-@media (min-width: $breakpoint-tablet)
-{
-	.fonctionnement__list-grid,  .restaurants__list-grid
-	{
+@media (min-width: $breakpoint-tablet) {
+	.fonctionnement__list-grid,  
+	.restaurants__list-grid {
 		grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 		column-gap: 2rem;
 	}

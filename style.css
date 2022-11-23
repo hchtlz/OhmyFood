@@ -19,10 +19,6 @@ a {
   text-decoration: none;
 }
 
-.fa-regular {
-  font-size: 20px;
-}
-
 html {
   line-height: 1.15;
   /* 1 */
@@ -89,10 +85,12 @@ main {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
-.fa-heart {
-  color: black;
+.fa-regular {
+  font-size: 20px;
 }
+
 .fa-heart::before {
+  color: black;
   transition: color 0.1s ease-in-out;
 }
 .fa-heart:hover::before {
@@ -190,6 +188,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .fonctionnement {
@@ -299,7 +298,8 @@ main {
 }
 
 @media (min-width: 768px) {
-  .fonctionnement__list-grid, .restaurants__list-grid {
+  .fonctionnement__list-grid,
+.restaurants__list-grid {
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     column-gap: 2rem;
   }
@@ -409,7 +409,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
 .restaurants__check-icon {
   font-size: 3rem;
