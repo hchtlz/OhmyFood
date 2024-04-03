@@ -1,5 +1,8 @@
 # OhmyFood
 
+> [!CAUTION]
+> This repository hosts a project completed as part of my [OpenClassrooms](https://openclassrooms.com) training program. Having successfully completed the program, the project has now been archived and will no longer be actively maintained. Please be aware that while the repository will remain accessible for reference, some links or features may no longer function as intended.
+
 ## Description du Projet
 Ce projet vise à développer un site web "mobile first" pour OhMyFood, une startup de restauration gastronomique présente à New York et souhaitant s'étendre à Paris. Le site permettra aux clients de consulter les menus de restaurants gastronomiques, de composer leur repas à l'avance, et de réserver leur table. Il devra être responsive et inclure des animations soignées conformément aux maquettes et au brief créatif.
 
